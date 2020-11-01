@@ -9,12 +9,13 @@ const appReducer = combineReducers({
   language: languageReducer,
 })
 
-const initialState = {
-  cart: [],
-  user: null,
-  language: 'en',
-}
+// const initialState = {
+//   cart: [],
+//   user: null,
+//   language: 'en',
+// }
 
-const store = createStore(appReducer, initialState);
+// const store = createStore(appReducer, initialState);
+const store = createStore(appReducer);
 
 export default store;
