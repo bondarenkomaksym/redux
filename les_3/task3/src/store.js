@@ -4,11 +4,17 @@ import { userReducer } from './user.reducer';
 import { languageReducer } from './language.reducer';
 
 const appReducer = combineReducers({
-  cart: cartReducer,
-  user: userReducer,
-  language: languageReducer,
+  cartState: cartReducer,
+  userState: userReducer,
+  languageState: languageReducer,
 })
 
-const store = createStore(appReducer);
+const initialState = {
+  cartState: [],
+  userState: null,
+  languageState: 'en',
+}
+
+const store = createStore(appReducer, initialState);
 
 export default store;
