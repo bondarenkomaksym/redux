@@ -4,7 +4,7 @@ const initialState = {
   language: 'en',
 }
 
-export const setLanguage = (state = initialState, action) => {
+export const languageReducer = (state = initialState, action) => {
   switch (action.type) {
     case SET_LANGUAGE:
       return action.payload.language
