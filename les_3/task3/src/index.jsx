@@ -4,7 +4,7 @@ import { addProduct, removeProduct } from './cart.actions';
 import { setUser, removeUser } from './user.actions';
 import { setLanguage } from './language.actions';
 
-store.subscribe(() => console.log(store.getState()))
+// store.subscribe(() => console.log(store.getState()));
 
 // store.dispatch(setUser({ id: 76, name: 'Sarah' }));
 // store.dispatch(addProduct({ id: 14, name: 'milk' }));
