@@ -1,10 +1,11 @@
 import { createStore, combineReducers } from "redux";
-import counterReducer from './counter.reducer';
+// import counterReducer from './counter.reducer';
 import usersReducer from './users.reducer';
+import { currentPageReducer } from './pages.reducer';
 
 const reducer = combineReducers({
-  counter: counterReducer,
-  users: usersReducer
+  currentPage: currentPageReducer,
+  users: usersReducer,
 })
 
 const store = createStore(reducer,
