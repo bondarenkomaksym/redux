@@ -8,9 +8,9 @@ import { userListSelector, currentPageSelector } from "./users.selectors";
 
 const itemsPerPage = 3;
 
-const UsersList = ({ users, currentPage, goNext, goPrev }) => {
+const UsersList = ({ usersList, currentPage, goNext, goPrev }) => {
   const start = currentPage * itemsPerPage;
-  const usersToDisplay = users.slice(start, start + itemsPerPage);
+  const usersToDisplay = usersList.slice(start, start + itemsPerPage);
 
   return (
     <div>
@@ -18,7 +18,7 @@ const UsersList = ({ users, currentPage, goNext, goPrev }) => {
         goPrev={goPrev}
         goNext={goNext}
         currentPage={currentPage}
-        totalItems={users.length}
+        totalItems={usersList.length}
         itemsPerPage={itemsPerPage}
       />
       <ul className="users">
@@ -33,7 +33,7 @@ const UsersList = ({ users, currentPage, goNext, goPrev }) => {
 
 const mapState = (state) => {
   return {
-    users: userListSelector(state),
+    usersList: userListSelector(state),
     currentPage: currentPageSelector(state),
   };
 };
