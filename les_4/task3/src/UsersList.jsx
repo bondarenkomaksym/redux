@@ -33,11 +33,7 @@ class UsersList extends React.Component {
 
   render() {
 
-    //принимаем список поль-лей
-    // const users = this.props.users;
-
     //высчитываем кол поль-лей
-    // const currentPage = this.state.currentPage;
 
     const { itemsPerPage } = this.state;
     const { currentPage } = this.props;
