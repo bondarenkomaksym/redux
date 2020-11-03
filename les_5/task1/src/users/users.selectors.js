@@ -1,6 +1,6 @@
 export const userListSelector = (state) => {
-  return state.users.usersList;
+  return state.usersList;
 };
 export const currentPageSelector = (state) => {
-  return state.users.currentPage;
+  return state.currentPage;
 };
