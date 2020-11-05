@@ -34,9 +34,9 @@ UserInfo.propTypes = {
   }).isRequired,
 };
 
-// UserInfo.defaultValue = {
-//   userData: null,
-// }
+UserInfo.defaultValue = {
+  userData: null,
+}
 
 const mapState = state => {
   return {
