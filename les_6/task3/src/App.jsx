@@ -1,6 +1,6 @@
 import React from "react";
 import { Provider } from "react-redux";
-import Weather from "./Weather";
+import Weather from "./weather/Weather";
 import store from "./store";
 
 const App = () => {
