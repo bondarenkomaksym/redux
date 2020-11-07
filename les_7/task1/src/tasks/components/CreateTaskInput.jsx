@@ -1,5 +1,5 @@
 import React from "react";
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 
 class CreateTaskInput extends React.Component {
 
@@ -41,12 +41,5 @@ class CreateTaskInput extends React.Component {
 }
 
 
-CreateTaskInput.propTypes = {
-  handleAddTodo: PropTypes.func.isRequired
-}
-
 export default CreateTaskInput;
 
-// 1. текст из инпута
-// 2. создать таск с этим текстом
-// 3. добавить объект с этим текстом в список
